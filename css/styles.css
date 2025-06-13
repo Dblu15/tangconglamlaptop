@@ -22173,4 +22173,97 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
     font-size: 0.5rem;         /* mặc định 0.875rem, giờ giảm xuống 0.7rem */
   }
 }
+
+button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.flat-spacing-24 {
+            padding: 24px 0;
+        }
+        
+        .pt-0 {
+            padding-top: 0;
+        }
+        
+        .img-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 278px;
+            border-radius: 0.375rem 0.375rem 0 0;
+        }
+        
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+        
+        .img-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+        
+        .img-container:hover .img-hover {
+            opacity: 1;
+        }
+        
+        .card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+        }
+        
+        .btn-outline-danger.disabled {
+            border-color: #dc3545;
+            color: #dc3545;
+            background-color: transparent;
+            opacity: 1;
+            margin: 2px;
+            font-size: 0.75rem;
+            padding: 0.25rem 0.5rem;
+        }
+        
+        .card-body {
+            padding: 1rem;
+        }
+        
+        .fs-5 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #212529;
+        }
+        
+        /* Responsive breakpoints */
+        @media (max-width: 576px) {
+            .img-container {
+                height: 200px;
+            }
+            
+            .btn-outline-danger.disabled {
+                font-size: 0.7rem;
+                padding: 0.2rem 0.4rem;
+                margin: 1px;
+            }
+            
+            .card-body {
+                padding: 0.75rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .special-margin {
+                margin-left: 0 !important;
+                margin-top: 5px;
+            }
+        }
+
 /*# sourceMappingURL=styles.css.map */

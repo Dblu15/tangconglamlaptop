@@ -2,38 +2,18 @@
   * Handle Mobile Menu
   * Handle Footer
   * Header Sticky
-  * Select Image
   * Variant Picker
-  * Custom Dropdown
-  * Check Active 
-  * Color Swatch Product
-  * Sidebar Mobile
   * Stagger Wrap
-  * Modal Second
-  * Estimate Shipping
-  * Auto Popup
   * Handle Progress
   * Total Price Variant
   * Total Bundle
-  * Scroll Grid Product
-  * Hover Video
-  * Change Value Dropdown
-  * Button Loading
   * Item Checkbox
-  * Parallax
-  * Infinite Slide
   * Button Quantity
   * Delete Item
-  * Click Control 
-  * Tab Slide
-  * Coppy Text 
   * Wish List
   * Bottom Sticky
-  * Handle Sidebar Filter 
-  * Cookie Setting
   * Preloader
   * Go Top
-  * RTL
 
  */
 
@@ -253,25 +233,6 @@
     }, 250);
   };
 
-  /* Select Image
-  -------------------------------------------------------------------------------------*/
-  var selectImages = function () {
-    if ($(".image-select").length > 0) {
-      const selectIMG = $(".image-select");
-
-      selectIMG.find("option").each((idx, elem) => {
-        const selectOption = $(elem);
-        const imgURL = selectOption.attr("data-thumbnail");
-        if (imgURL) {
-          selectOption.attr(
-            "data-content",
-            `<img src="${imgURL}" /> ${selectOption.text()}`
-          );
-        }
-      });
-      selectIMG.selectpicker();
-    }
-  };
 
   /* Variant Picker
   -------------------------------------------------------------------------------------*/
@@ -302,60 +263,8 @@
     }
   };
 
-  /* Custom Dropdown
-  -------------------------------------------------------------------------*/
-  var customDropdown = function () {
-    function updateDropdownClass() {
-      const $dropdown = $(".dropdown-custom");
 
-      if ($(window).width() <= 991) {
-        $dropdown.addClass("dropup").removeClass("dropend");
-      } else {
-        $dropdown.addClass("dropend").removeClass("dropup");
-      }
-    }
-    updateDropdownClass();
-    $(window).resize(updateDropdownClass);
-  };
 
-  /* Check Active 
-  -------------------------------------------------------------------------*/
-  var checkClick = function () {
-    $(".flat-check-list").on("click", ".check-item", function () {
-      $(this)
-        .closest(".flat-check-list")
-        .find(".check-item")
-        .removeClass("active");
-      $(this).addClass("active");
-    });
-  };
-
-  /* Color Swatch Product
-  -------------------------------------------------------------------------*/
-  var swatchColor = function () {
-    if ($(".card-product").length > 0) {
-      $(".color-swatch").on("click mouseover", function () {
-        var $swatch = $(this);
-        var swatchColor = $swatch.find("img:not(.swatch-img)").attr("src");
-        var imgProduct = $swatch.closest(".card-product").find(".img-product");
-        var colorLabel = $swatch.find(".color-label").text().trim();
-        imgProduct.attr("src", swatchColor);
-        $swatch.closest(".card-product").find(".quickadd-variant-color .variant-value").text(colorLabel);
-        $swatch.closest(".card-product").find(".color-swatch.active").removeClass("active");
-        $swatch.addClass("active");
-      });
-    }
-  };
-  
-
-  /* Sidebar Mobile
-  -------------------------------------------------------------------------*/
-  var sidebarMobile = function () {
-    if ($(".sidebar-content-wrap").length > 0) {
-      var sidebar = $(".sidebar-content-wrap").html();
-      $(".sidebar-mobile-append").append(sidebar);
-    }
-  };
 
   /* Stagger Wrap
   -------------------------------------------------------------------------*/
@@ -370,178 +279,7 @@
     }
   };
 
-  /* Modal Second
-  -------------------------------------------------------------------------*/
-  var clickModalSecond = function () {
-    $(".btn-quickview").on("click",function () {
-      $("#quickView").modal("show");
-    });
-    $(".btn-compare").on("click",function () {
-      $("#compare").modal("show");
-    });
-    $(".btn-quickadd").on("click",function () {
-      $("#quickAdd").modal("show");
-    });
-    $(".btn-atc").on("click",function () {
-      $("#shoppingCart").modal("show");
-    });
-    $(".btn-add-gift").on("click",function () {
-      $(".add-gift").addClass("open");
-    });
-    $(".btn-add-note").on("click",function () {
-      $(".add-note").addClass("open");
-    });
-    $(".btn-coupon").on("click",function () {
-      $(".coupon").addClass("open");
-    });
-    $(".btn-estimate-shipping").on("click",function () {
-      $(".estimate-shipping").addClass("open");
-    });
-    $(".tf-mini-cart-tool-close").on("click",function () {
-      $(".tf-mini-cart-tool-openable").removeClass("open");
-    });
-  };
 
-  /* Estimate Shipping
-  -------------------------------------------------------------------------*/
-  var estimateShipping = function () {
-    if ($(".estimate-shipping").length) {
-      const countrySelect = document.getElementById("shipping-country-form");
-      const provinceSelect = document.getElementById("shipping-province-form");
-      const zipcodeInput = document.getElementById("zipcode");
-      const zipcodeMessage = document.getElementById("zipcode-message");
-      const zipcodeSuccess = document.getElementById("zipcode-success");
-
-      function updateProvinces() {
-        const selectedCountry = countrySelect.value;
-        const selectedOption =
-          countrySelect.options[countrySelect.selectedIndex];
-        const provincesData = selectedOption.getAttribute("data-provinces");
-
-        const provinces = JSON.parse(provincesData);
-
-        provinceSelect.innerHTML = "";
-
-        if (provinces.length === 0) {
-          const option = document.createElement("option");
-          option.textContent = "------";
-          provinceSelect.appendChild(option);
-        } else {
-          provinces.forEach((province) => {
-            const option = document.createElement("option");
-            option.value = province[0];
-            option.textContent = province[1];
-            provinceSelect.appendChild(option);
-          });
-        }
-      }
-
-      countrySelect.addEventListener("change", updateProvinces);
-
-      function validateZipcode(zipcode, country) {
-        let regex;
-
-        switch (country) {
-          case "Australia":
-            regex = /^\d{4}$/;
-            break;
-          case "Austria":
-            regex = /^\d{4}$/;
-            break;
-          case "Belgium":
-            regex = /^\d{4}$/;
-            break;
-          case "Canada":
-            regex = /^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/;
-            break;
-          case "Czech Republic":
-            regex = /^\d{5}$/;
-            break;
-          case "Denmark":
-            regex = /^\d{4}$/;
-            break;
-          case "Finland":
-            regex = /^\d{5}$/;
-            break;
-          case "France":
-            regex = /^\d{5}$/;
-            break;
-          case "Germany":
-            regex = /^\d{5}$/;
-            break;
-          case "United States":
-            regex = /^\d{5}(-\d{4})?$/;
-            break;
-          case "United Kingdom":
-            regex = /^[A-Za-z]{1,2}\d[A-Za-z\d]? \d[A-Za-z]{2}$/;
-            break;
-          case "India":
-            regex = /^\d{6}$/;
-            break;
-          case "Japan":
-            regex = /^\d{3}-\d{4}$/;
-            break;
-          case "Mexico":
-            regex = /^\d{5}$/;
-            break;
-          case "South Korea":
-            regex = /^\d{5}$/;
-            break;
-          case "Spain":
-            regex = /^\d{5}$/;
-            break;
-          case "Italy":
-            regex = /^\d{5}$/;
-            break;
-          case "Vietnam":
-            regex = /^\d{6}$/;
-            break;
-          default:
-            return true;
-        }
-
-        return regex.test(zipcode);
-      }
-
-      document
-        .getElementById("shipping-form")
-        .addEventListener("submit", function (event) {
-          const zipcode = zipcodeInput.value.trim();
-          const country = countrySelect.value;
-
-          if (!validateZipcode(zipcode, country)) {
-            zipcodeMessage.style.display = "block";
-            zipcodeSuccess.style.display = "none";
-            event.preventDefault();
-          } else {
-            zipcodeMessage.style.display = "none";
-            zipcodeSuccess.style.display = "block";
-            event.preventDefault();
-          }
-        });
-
-      window.onload = updateProvinces;
-    }
-  };
-
-  /* Auto Popup
-  ------------------------------------------------------------------------------------- */
-  var autoPopup = function () {
-    if ($(".auto-popup").length > 0) {
-        let pageKey = "showPopup_" + window.location.pathname; 
-        let showPopup = sessionStorage.getItem(pageKey);
-
-        if (!JSON.parse(showPopup)) {
-            setTimeout(function () {
-                $(".auto-popup").modal("show");
-            }, 3000);
-        }
-        
-        $(".btn-hide-popup").on("click", function () {
-            sessionStorage.setItem(pageKey, true); 
-        });
-    }
-  };
 
   /* Handle Progress
   ------------------------------------------------------------------------------------- */
@@ -664,117 +402,6 @@
   };
 
 
-  /* Scroll Grid Product
-  ------------------------------------------------------------------------------------- */
-  var scrollGridProduct = function () {
-    var scrollContainer = $(".wrapper-gallery-scroll");
-    var activescrollBtn = null;
-    var offsetTolerance = 20;
-
-    function isHorizontalMode() {
-      return window.innerWidth <= 767;
-    }
-
-    function getTargetScroll(target, isHorizontal) {
-      if (isHorizontal) {
-        return (
-          target.offset().left -
-          scrollContainer.offset().left +
-          scrollContainer.scrollLeft()
-        );
-      } else {
-        return (
-          target.offset().top -
-          scrollContainer.offset().top +
-          scrollContainer.scrollTop()
-        );
-      }
-    }
-
-    $(".btn-scroll-target").on("click", function () {
-      var scroll = $(this).data("scroll");
-      var target = $(".item-scroll-target[data-scroll='" + scroll + "']");
-
-      if (target.length > 0) {
-        var isHorizontal = isHorizontalMode();
-        var targetScroll = getTargetScroll(target, isHorizontal);
-
-        if (isHorizontal) {
-          scrollContainer.animate({ scrollLeft: targetScroll }, 600);
-        } else {
-          $("html, body").animate({ scrollTop: targetScroll }, 100);
-        }
-
-        $(".btn-scroll-target").removeClass("active");
-        $(this).addClass("active");
-        activescrollBtn = $(this);
-      }
-    });
-
-    $(window).on("scroll", function () {
-      var isHorizontal = isHorizontalMode();
-      $(".item-scroll-target").each(function () {
-        var target = $(this);
-        var targetScroll = getTargetScroll(target, isHorizontal);
-
-        if (isHorizontal) {
-          if (
-            $(window).scrollLeft() >= targetScroll - offsetTolerance &&
-            $(window).scrollLeft() <= targetScroll + target.outerWidth()
-          ) {
-            $(".btn-scroll-target").removeClass("active");
-            $(
-              ".btn-scroll-target[data-scroll='" + target.data("scroll") + "']"
-            ).addClass("active");
-          }
-        } else {
-          if (
-            $(window).scrollTop() >= targetScroll - offsetTolerance &&
-            $(window).scrollTop() <= targetScroll + target.outerHeight()
-          ) {
-            $(".btn-scroll-target").removeClass("active");
-            $(
-              ".btn-scroll-target[data-scroll='" + target.data("scroll") + "']"
-            ).addClass("active");
-          }
-        }
-      });
-    });
-  };
-
-  /* Change Value Dropdown
-  ------------------------------------------------------------------------------------- */
-  var changeValueDropdown = function () {
-    if ($(".tf-dropdown").length > 0) {
-      $(".select-item").on("click",function (event) {
-        $(this)
-          .closest(".tf-dropdown")
-          .find(".text-sort-value")
-          .text($(this).find(".text-value-item").text());
-
-        $(this)
-          .closest(".dropdown-menu")
-          .find(".select-item.active")
-          .removeClass("active");
-
-        $(this).addClass("active");
-      });
-    }
-  };
-
-  /* Button Loading
-  -------------------------------------------------------------------------*/
-  var btnLoading = function () {
-    if ($(".tf-loading").length) {
-      $(".tf-loading").on("click", function (e) {
-        $(this).addClass("loading");
-        var $this = $(this);
-        setTimeout(function () {
-          $this.removeClass("loading");
-        }, 600);
-      });
-    }
-  };
 
   /* Item Checkbox
   -------------------------------------------------------------------------*/
@@ -786,58 +413,6 @@
     }
   };
 
-  
-  /* Parallax
-  ----------------------------------------------------------------------------*/
-  var efectParalax = function () {
-      $(".effect-paralax").each(function () {
-        new SimpleParallax(this, {
-          delay: 0.5,
-          orientation: "up",
-          scale: 1.3,
-          transition: "cubic-bezier(0.2, 0.8, 1, 1)",
-          customContainer: "",
-          customWrapper: "",
-        });
-      });
-  };
-
-  /* Parallaxie js 
-  -------------------------------------------------------------------------------------*/
-
-  var parallaxie = function () {
-      var $window = $(window);
-      if ($(".parallaxie").length && $window.width() > 991) {
-          if ($window.width() > 768) {
-              $(".parallaxie").parallaxie({
-                  speed: 0.55,
-                  offset: 0,
-              });
-          }
-      }
-  };
-
-  /* Infinite Slide
-  ----------------------------------------------------------------------------*/
-  var infiniteSlide = function () {
-    $(".infiniteslide").each(function () {
-      var $this = $(this);
-      var style = $this.data("style") || "left";
-      var clone = parseInt($this.data("clone")) || 2;
-      var speed = parseInt($this.data("speed")) || 100;
-  
-      if ($("body").hasClass("rtl")) {
-        style = style === "left" ? "right" : "left";
-      }
-  
-      $this.infiniteslide({
-        speed: speed,
-        direction: style,
-        clone: clone,
-      });
-    });
-  };
-  
 
   /* Button Quantity
   ----------------------------------------------------------------------------*/
@@ -937,108 +512,6 @@
   };
   
 
-  /* Click Control 
-  ------------------------------------------------------------------------------------- */
-  var clickControl = function () {
-    $(".btn-add-address").on("click",function () {
-      $(".show-form-address").toggle();
-    });
-    $(".btn-hide-address").on("click",function () {
-      $(".show-form-address").hide();
-    });
-    $(".btn-delete-address").on("click",function () {
-      $(this).closest(".account-address-item").remove();
-      var item = $(this).closest(".account-address-item");
-      if (item.hasClass("editing")) {
-        $(".edit-form-address").toggle();
-        $(".edit-form-address").toggleClass("show");
-      }
-    });
-
-    $(".btn-edit-address").on("click",function (e) {
-      var item = $(this).closest(".account-address-item");
-      if ($(".edit-form-address").hasClass("show")) {
-        if (item.hasClass("editing")) {
-          $(".edit-form-address").toggle();
-          $(".edit-form-address").toggleClass("show");
-          $(".account-address-item").removeClass("editing");
-        } else {
-          $(".account-address-item").removeClass("editing");
-          item.addClass("editing");
-        }
-      } else {
-        $(".edit-form-address").toggle();
-        $(".edit-form-address").toggleClass("show");
-        $(this).closest(".account-address-item").toggleClass("editing");
-      }
-    });
-    $(".btn-hide-edit-address").on("click",function () {
-      $(".edit-form-address").hide();
-      $(".edit-form-address").removeClass("show");
-      $(".account-address-item").removeClass("editing");
-    });
-  };
-
-  /* Tab Slide 
-  ------------------------------------------------------------------------------------- */
-  var tabSlide = function () {
-    if ($(".tab-slide").length > 0) {
-      function updateTabSlide() {
-        var $activeTab = $(".tab-slide li.active");
-        if ($activeTab.length > 0) {
-          var $width = $activeTab.width();
-          var $left = $activeTab.position().left;
-          var sideEffect = $activeTab.parent().find(".item-slide-effect");
-          $(sideEffect).css({
-            width: $width,
-            transform: "translateX(" + $left + "px)",
-          });
-        }
-      }
-      $(".tab-slide li").on("click", function () {
-        var itemTab = $(this).parent().find("li");
-        $(itemTab).removeClass("active");
-        $(this).addClass("active");
-
-        var $width = $(this).width();
-        var $left = $(this).position().left;
-        var sideEffect = $(this).parent().find(".item-slide-effect");
-        $(sideEffect).css({
-          width: $width,
-          transform: "translateX(" + $left + "px)",
-        });
-      });
-
-      $(window).on("resize", function () {
-        updateTabSlide();
-      });
-
-      updateTabSlide();
-    }
-  };
-
-  /* Coppy Text 
-  ------------------------------------------------------------------------------------- */
-  var coppyText = function () {
-    $("#btn-coppy-text").on("click", function () {
-      var text = document.getElementById("coppyText");
-
-      var coppy = document.createRange();
-      coppy.selectNode(text);
-
-      window.getSelection().removeAllRanges();
-      window.getSelection().addRange(coppy);
-
-      try {
-        document.execCommand("copy");
-        alert("Text copied: " + text.innerText);
-      } catch (err) {
-        alert("Failed to copy text: " + err);
-      }
-
-      window.getSelection().removeAllRanges();
-    });
-  };
 
   /* Wish List 
   ------------------------------------------------------------------------------------- */
@@ -1077,154 +550,6 @@
     });
   };
 
-  /* Handle Sidebar Filter 
-  -------------------------------------------------------------------------------------*/
-  var handleSidebarFilter = function () {
-    $("#filterShop,.sidebar-btn").on("click",function () {
-      if ($(window).width() <= 1200) {
-        $(".sidebar-filter,.overlay-filter").addClass("show");
-      }
-    });
-    $(".close-filter,.overlay-filter").on("click",function () {
-      $(".sidebar-filter,.overlay-filter").removeClass("show");
-    });
-  };
-
-  /* Cookie Setting
-  -------------------------------------------------------------------------------------*/
-  var cookieSetting = function () {
-    $(".cookie-banner .overplay").on("click", function () {
-      $(".cookie-banner").hide();
-    });
-
-    function setCookie(name, value, days) {
-      const date = new Date();
-      date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-      const expires = "expires=" + date.toUTCString();
-      document.cookie = `${name}=${value}; ${expires}; path=/`;
-    }
-
-    function getCookie(name) {
-      const nameEQ = name + "=";
-      const cookies = document.cookie.split(";");
-      for (let i = 0; i < cookies.length; i++) {
-        let cookie = cookies[i].trim();
-        if (cookie.indexOf(nameEQ) === 0) {
-          return cookie.substring(nameEQ.length, cookie.length);
-        }
-      }
-      return null;
-    }
-
-    function checkCookie() {
-      const $cookieBanner = $("#cookie-banner");
-      const accepted = getCookie("cookieAccepted");
-
-      if (accepted) {
-        $cookieBanner.hide();
-      } else {
-        $cookieBanner.show();
-      }
-    }
-
-    $(document).ready(function () {
-      $("#accept-cookie").on("click", function () {
-        setCookie("cookieAccepted", "true", 30);
-        $("#cookie-banner").hide();
-      });
-
-      checkCookie();
-    });
-  };
-
-  /* Postion Navigation Centered
-  -------------------------------------------------------------------------------------*/
-  var posNavSwiper = function () {
-    $(".wrap-pos-nav").each(function () {
-      var imageBlog = $(this).find(".blog-item-v2 .entry-image"); 
-      if (imageBlog.length) {
-          var contentHeight = $(this).find(".blog-item-v2 .entry-content").outerHeight(); 
-          var newTop = `calc(50% - ${contentHeight / 2}px)`; 
-          $(this).find(".nav-swiper").css("top", newTop);
-      }
-      var imageProduct = $(this).find(".card-product .card-product-wrapper"); 
-      if (imageProduct.length) {
-          var contentHeight = $(this).find(".card-product .card-product-info").outerHeight(); 
-          var newTop = `calc(50% - ${contentHeight / 2}px)`; 
-          $(this).find(".nav-swiper").css("top", newTop);
-      }
-  });
-  }
-
-  /* Block Form
-  -------------------------------------------------------------------------------------*/  
-  var blockForm = function () {
-    $(".form-newsletter").submit(function (e) {
-      e.preventDefault(); 
-    
-      $(".form-newsletter").append(
-        '<p class="mt_10 feedback-message text-sm">Subscribe successfully!</p>'
-      );
-  });
-  };
-
-  /* Check Input Discount
-  -------------------------------------------------------------------------------------*/
-  var handleResultIP = function () {
-    $(".box-ip-discount button").on("click", function (e) {
-      e.preventDefault();
-      $(".box-ip-discount .discount-message").remove();
-      var discountCode = $(".box-ip-discount .value-discount").val().trim();
-      if(discountCode === ""){
-        $(".box-ip-discount").append('<div class="discount-message text-sm error">Please enter a discount code.</div>');
-      } else {
-        $(".box-ip-discount").append('<div class="discount-message text-sm success">Discount code applied successfully!</div>');
-      }
-      $(".discount-message").hide().fadeIn(300);
-    })
-    $(".shipping-cart-box button").on("click", function(e) {
-      e.preventDefault();
-      
-      $(".shipping-message").remove();
-      
-      var country = $(".shipping-cart-box #country").val().trim();
-      var state = $(".shipping-cart-box #state").val().trim();
-      var zipcode = $(".shipping-cart-box #code").val().trim();
-      
-      if(country === "" || state === "" || zipcode === "") {
-        $(".shipping-cart-box").append(
-          '<div class="shipping-message text-sm error">Please enter all required shipping details.</div>'
-        );
-      } else {
-        $(".shipping-cart-box").append(
-          '<div class="shipping-message text-sm success">Shipping estimate applied successfully!</div>'
-        );
-      }
-      
-      $(".shipping-message").hide().fadeIn(300);
-    });
-    $(".feedback-box button").on("click", function(e) {
-      e.preventDefault();
-      
-      $(".feedback-message").remove();
-      
-      var country = $(".feedback-box #name").val().trim();
-      var state = $(".feedback-box #email").val().trim();
-      var zipcode = $(".feedback-box #desc").val().trim();
-      
-      if(country === "" || state === "" || zipcode === "") {
-        $(".feedback-box").append(
-          '<div class="feedback-message text-sm error">Please enter all required feedback</div>'
-        );
-      } else {
-        $(".feedback-box").append(
-          '<div class="feedback-message text-sm success">Feedback applied successfully!</div>'
-        );
-      }
-      
-      $(".feedback-message").hide().fadeIn(300);
-    });
-  };
 
   /* Preloader
   -------------------------------------------------------------------------------------*/
@@ -1272,79 +597,66 @@
     });
   }
 
-  /* RTL
-  ------------------------------------------------------------------------------------- */
-  var RTL = function () {
-    if (localStorage.getItem("dir") === "rtl") {
-      $("html").attr("dir", "rtl");
-      $("body").addClass("rtl");
-      $("#toggle-rtl").text("ltr");
-      $(
-        ".box-nav-menu .mega-tab .tab-link"
-      )
-      .find(".icon-arr-right")
-      .removeClass("icon-arr-right")
-      .addClass("icon-arr-left");
-    } else {
-      $("html").attr("dir", "ltr");
-      $("body").removeClass("rtl");
-      $("#toggle-rtl").text("rtl");
-    }
-    $("#toggle-rtl").on("click", function () {
-      if ($("html").attr("dir") === "rtl") {
-        localStorage.setItem("dir", "ltr");
-        $("#toggle-rtl").text("rtl");
-      } else {
-        localStorage.setItem("dir", "rtl");
-        $("#toggle-rtl").text("ltr");
-      }
-      location.reload();
-    });
-  };
 
   // Dom Ready
   $(function () {
     handleMobileMenu();
     handleFooter();
     headerSticky();
-    selectImages();
     variantPicker();
-    customDropdown();
-    checkClick();
-    swatchColor();
-    sidebarMobile();
     staggerWrap();
-    clickModalSecond();
-    estimateShipping();
-    autoPopup();
     handleProgress();
     totalPriceVariant();
     initBundleFunctionality();
-    scrollGridProduct();
-    changeValueDropdown();
-    btnLoading();
     itemCheckbox();
-    efectParalax();
-    parallaxie();
     btnQuantity();
     deleteCompare();
     deleteWishList();
-    clickControl();
-    coppyText();
     wishList();
     scrollBottomSticky();
-    handleSidebarFilter();
-    cookieSetting();
-    posNavSwiper();
-    blockForm();
-    handleResultIP();
-    RTL();
     removecompare();
-    tabSlide();
-    infiniteSlide();
     preloader();
     goTop();
     new WOW().init();
     
   });
 })(jQuery);
+
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.card-body').forEach(cb => {
+        // 1. Giữ lại phần tiêu đề
+        const titleEl = cb.querySelector('p.fs-5');
+        const titleHTML = titleEl.outerHTML;
+
+        // 2. Lấy phần specs (HTML giữa tiêu đề và hết cb)
+        let specsHtml = cb.innerHTML.replace(titleHTML, '').trim();
+
+        // 3. Tách theo <br>
+        const parts = specsHtml.split(/<br\s*\/?>/);
+
+        // 4. Xây dựng bảng
+        let table = '<table class="table table-borderless mb-0">';
+        parts.forEach(part => {
+          const fragment = document.createElement('div');
+          fragment.innerHTML = part;
+          const text = (fragment.textContent || '').trim();
+          if (!text || text.indexOf(':') < 0) return;
+
+          const label = text.split(':')[0].trim();
+          // Lấy HTML của tất cả các nút trong fragment
+          const buttons = Array.from(fragment.querySelectorAll('button'))
+            .map(btn => btn.outerHTML)
+            .join(' ');
+
+          table += `
+          <tr>
+            <td>${label}:</td>
+            <td>${buttons}</td>
+          </tr>`;
+        });
+        table += '</table>';
+
+        // 5. Đặt lại nội dung .card-body
+        cb.innerHTML = titleHTML + table;
+      });
+    });

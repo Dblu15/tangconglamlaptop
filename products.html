@@ -1299,24 +1299,6 @@
         </div>
       </div>
     </section>
-    <!-- /Section Product -->
-    <div id="description" class="flat-spacing pt-0">
-      <div class="container">
-        <p class="text text-md text-center">
-          Our women's collection fuses classic sophistication with modern
-          trends. From versatile daywear to statement pieces, each garment is
-          crafted with high-quality fabrics and meticulous attention to detail
-          for lasting comfort and a perfect fit.
-        </p>
-        <p class="mt_12 text-md text-center">
-          Looking for more? Don’t miss out on our other exciting collections
-          for
-          <a href="shop-sub-collection.html" class="text-primary text-decoration-underline fw-medium">BAGS</a>
-          and
-          <a href="shop-sub-collection.html" class="text-primary text-decoration-underline fw-medium">ACCESSORIES</a>.
-        </p>
-      </div>
-    </div>
     <div class="flat-spacing-5 line-top flat-wrap-iconbox">
       <div class="container">
         <div dir="ltr" class="swiper tf-swiper wow fadeInUp" data-swiper='{
@@ -1342,9 +1324,9 @@
                     fill="#ABABAB" />
                 </svg>
                 <div class="content">
-                  <div class="title">Free Shipping</div>
+                  <div class="title">Miễn phí giao hàng</div>
                   <p class="desc text-grey-2">
-                    Enjoy free shipping on all orders over $150
+                    Miễn phí giao hàng cho đơn hàng trên 10.000.000 VNĐ
                   </p>
                 </div>
               </div>
@@ -1357,9 +1339,9 @@
                     fill="#ABABAB" />
                 </svg>
                 <div class="content">
-                  <div class="title">Easy Returns</div>
+                  <div class="title">Đổi trả dễ dàng</div>
                   <p class="desc text-grey-2">
-                    Hassle-free returns for a worry-free shopping experience.
+                    Đổi trả dễ dàng cho khách hàng khi mua sắm tại cửa hàng.
                   </p>
                 </div>
               </div>
@@ -1372,9 +1354,9 @@
                     fill="#ABABAB" />
                 </svg>
                 <div class="content">
-                  <div class="title">24/7 Support</div>
+                  <div class="title">Hỗ trợ 24/7</div>
                   <p class="desc text-grey-2">
-                    We're here for you anytime with 24/7 customer support.
+                    Chúng tôi luôn sẵn sàng hỗ trợ quý khách 24/7.
                   </p>
                 </div>
               </div>
@@ -1435,7 +1417,7 @@
                             fill="#0D0D0D" />
                         </svg>
                       </span>
-                      <a href="mailto:vitinhlamphat@gmail.com">vitinhlamphat@gmail.com</a>
+                      <a href="mailto:lamphatcommerce@gmail.com">lamphatcommerce@gmail.com</a>
                     </li>
                   </ul>
                   <a href="https://maps.app.goo.gl/K3VvYLMUfGBL8BGeA" class="tf-btn btn-line-dark fw-normal">
@@ -1489,46 +1471,7 @@
     <!-- /Footer -->
   </div>
   <!-- Javascript -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      document.querySelectorAll('.card-body').forEach(cb => {
-        // 1. Giữ lại phần tiêu đề
-        const titleEl = cb.querySelector('p.fs-5');
-        const titleHTML = titleEl.outerHTML;
-
-        // 2. Lấy phần specs (HTML giữa tiêu đề và hết cb)
-        let specsHtml = cb.innerHTML.replace(titleHTML, '').trim();
-
-        // 3. Tách theo <br>
-        const parts = specsHtml.split(/<br\s*\/?>/);
-
-        // 4. Xây dựng bảng
-        let table = '<table class="table table-borderless mb-0">';
-        parts.forEach(part => {
-          const fragment = document.createElement('div');
-          fragment.innerHTML = part;
-          const text = (fragment.textContent || '').trim();
-          if (!text || text.indexOf(':') < 0) return;
-
-          const label = text.split(':')[0].trim();
-          // Lấy HTML của tất cả các nút trong fragment
-          const buttons = Array.from(fragment.querySelectorAll('button'))
-            .map(btn => btn.outerHTML)
-            .join(' ');
-
-          table += `
-          <tr>
-            <td>${label}:</td>
-            <td>${buttons}</td>
-          </tr>`;
-        });
-        table += '</table>';
-
-        // 5. Đặt lại nội dung .card-body
-        cb.innerHTML = titleHTML + table;
-      });
-    });
-  </script>
+  
 
 
   <script src="js/bootstrap.min.js"></script>

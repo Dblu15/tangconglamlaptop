@@ -1,0 +1,171 @@
+<template>
+  <div>
+    <!-- Title Page -->
+    <section class="tf-page-title">
+      <div class="container">
+        <div class="box-title text-center">
+          <h4 class="title">Bảo hành</h4>
+          <div class="breadcrumb-list">
+            <a class="breadcrumb-item" href="index.html">Trang chủ</a>
+            <div class="breadcrumb-item dot"><span></span></div>
+            <div class="breadcrumb-item current">Bảo hành</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Title Page -->
+
+    <!-- Term -->
+    <section class="s-term-user flat-spacing-13">
+      <div class="container">
+        <div class="content">
+          <div class="term-item">
+            <h4>Chính sách bảo hành</h4><br><br>
+            <p class="term-text body-text text-main">
+              Cảm ơn quý khách đã tin tưởng và mua sắm tại
+              <strong>Laptop Lâm Phát</strong>. Tất cả sản phẩm
+              tại cửa hàng đều được kiểm tra kỹ lưỡng trước khi
+              bàn giao, cam kết máy nguyên zin, không qua sửa chữa
+              và được bảo hành minh bạch. Dưới đây là chính sách
+              bảo hành áp dụng cho tất cả sản phẩm mua tại
+              <strong>Laptop Lâm Phát</strong>:
+            </p><br><br>
+          </div>
+
+          <div class="term-item">
+            <p class="term-title">1. Thời Hạn Bảo Hành</p>
+            <div class="text-wrap">
+              <p class="term-text body-text text-main">
+                <strong>1.1. Laptop xách tay</strong><br>
+                – Bảo hành <strong>1 - 12 tháng</strong> tùy theo khung giá, linh hoạt cho thợ và khách lẻ kể từ ngày mua (theo hóa đơn).<br>
+                – Hết bảo hành vẫn hỗ trợ bảo trì cài đặt free và thu đổi lên đời.
+              </p>
+              <p class="term-text body-text text-main">
+                <strong>1.2. Linh kiện thay thế</strong><br>
+                – RAM, ổ cứng SSD/HDD, bàn phím, màn hình thay thế: bảo hành
+                <strong>3–6 tháng</strong> tùy linh kiện.<br>
+                – Áp dụng khi linh kiện được thay tại cửa hàng có ghi trên hóa đơn.
+              </p>
+              <p class="term-text body-text text-main">
+                <strong>1.3. Pin và sạc</strong><br>
+                – Pin và adapter sạc: bảo hành <strong>3 tháng</strong>.<br>
+                – Không áp dụng cho trường hợp pin phồng do sạc không đúng cách hoặc để
+                sạc qua đêm thường xuyên.
+              </p>
+            </div>
+          </div>
+
+          <div class="term-item">
+            <p class="term-title">2. Điều Kiện Được Bảo Hành</p>
+            <div class="text-wrap">
+              <p class="term-text body-text text-main">
+                Sản phẩm được bảo hành khi đáp ứng đầy đủ các điều kiện sau:<br>
+                – Còn trong thời hạn bảo hành theo hóa đơn mua hàng.<br>
+                – Lỗi xuất phát từ phần cứng, không do tác động ngoại lực (va đập, rơi vỡ, vào nước...).<br>
+                – Tem bảo hành của cửa hàng còn nguyên vẹn, không bị rách hoặc tháo mở.<br>
+                – Máy chưa qua sửa chữa tại nơi khác ngoài <strong>Laptop Lâm Phát</strong>.<br>
+                – Xuất trình được hóa đơn mua hàng hoặc thông tin đơn hàng.
+              </p>
+            </div>
+          </div>
+
+          <div class="term-item">
+            <p class="term-title">3. Các Trường Hợp KHÔNG Được Bảo Hành</p>
+            <div class="text-wrap">
+              <p class="term-text body-text text-main">
+                Sản phẩm sẽ không được bảo hành miễn phí trong các trường hợp sau:<br>
+                – Đã hết thời hạn bảo hành.<br>
+                – Hư hỏng do va đập, rơi vỡ, bẻ cong, biến dạng vỏ máy.<br>
+                – Vào nước, ẩm ướt, hoặc tiếp xúc với chất lỏng.<br>
+                – Tự ý tháo máy, sửa chữa tại nơi khác hoặc thay linh kiện không chính hãng.<br>
+                – Tem bảo hành bị rách, mất hoặc có dấu hiệu can thiệp.<br>
+                – Hư hỏng do thiên tai, hỏa hoạn, sét đánh, côn trùng, mối mọt.<br>
+                – Cháy nổ do dùng nguồn điện không ổn định hoặc sạc sai điện áp.<br>
+                – Màn hình bị trầy xước do vật sắc nhọn (không phải lỗi kỹ thuật).<br>
+                – Máy bị khóa tài khoản (iCloud Lock, Bitlocker...) do lỗi của người dùng.
+              </p>
+            </div>
+          </div>
+
+          <div class="term-item">
+            <p class="term-title">4. Quy Trình Bảo Hành</p>
+            <div class="text-wrap">
+              <p class="term-text body-text text-main">
+                <strong>Bước 1:</strong> Quý khách liên hệ Hotline/Zalo <strong>0973270102</strong>
+                mô tả lỗi hoặc mang máy trực tiếp đến cửa hàng tại
+                <strong>366/4 Chu Văn An, TP. Hồ Chí Minh</strong>.<br><br>
+                <strong>Bước 2:</strong> Kỹ thuật viên kiểm tra máy, xác định nguyên nhân
+                và thông báo kết quả trong vòng <strong>30–60 phút</strong>.<br><br>
+                <strong>Bước 3:</strong><br>
+                – Nếu lỗi thuộc diện bảo hành: sửa chữa hoặc thay thế linh kiện
+                <strong>miễn phí</strong>.<br>
+                – Nếu lỗi ngoài bảo hành: báo giá trước khi tiến hành sửa chữa,
+                quý khách có quyền từ chối.<br><br>
+                <strong>Bước 4:</strong> Bàn giao máy sau khi hoàn tất, kiểm tra
+                cùng kỹ thuật viên trước khi nhận lại.
+              </p>
+              <p class="term-text body-text text-main">
+                Thời gian xử lý bảo hành thông thường: <strong>1–3 ngày làm việc</strong>
+                (tùy mức độ lỗi và linh kiện). Trường hợp cần đặt linh kiện có thể
+                kéo dài hơn, chúng tôi sẽ thông báo trước.
+              </p>
+            </div>
+          </div>
+
+          <div class="term-item">
+            <p class="term-title">5. Chính Sách Đổi Mới Trong 30 Ngày</p>
+            <div class="text-wrap">
+              <p class="term-text body-text text-main">
+                Quý khách được đổi máy mới (cùng cấu hình hoặc tương đương)
+                trong vòng <strong>30 ngày</strong> kể từ ngày mua nếu:<br>
+                – Máy bị lỗi phần cứng nặng không thể sửa chữa được.<br>
+                – Lỗi phát sinh liên tục từ 3 lần trở lên với cùng một vấn đề.<br>
+                – Máy không đúng với mô tả sản phẩm tại thời điểm mua.<br><br>
+                <strong>Lưu ý:</strong> Máy đổi phải còn nguyên vẹn, đầy đủ phụ kiện
+                và hộp (nếu có), không có dấu hiệu va đập hoặc sử dụng sai cách.
+              </p>
+            </div>
+          </div>
+
+          <div class="term-item">
+            <p class="term-title">6. Lưu Ý Quan Trọng</p>
+            <div class="text-wrap">
+              <p class="term-text body-text text-main">
+                – Thời hạn bảo hành được tính từ ngày ghi trên hóa đơn mua hàng.<br>
+                – Quý khách nên sao lưu dữ liệu trước khi mang máy đến bảo hành.
+                <strong>Laptop Lâm Phát</strong> không chịu trách nhiệm đối với
+                dữ liệu bị mất trong quá trình sửa chữa.<br>
+                – Vui lòng xóa mật khẩu đăng nhập và tài khoản Microsoft/iCloud
+                trước khi giao máy để kỹ thuật viên có thể kiểm tra.<br>
+                – Trường hợp máy bị khóa tài khoản, cửa hàng có quyền từ chối
+                tiếp nhận cho đến khi được mở khóa.
+              </p>
+            </div>
+          </div>
+
+          <div class="term-item">
+            <div class="text-wrap">
+              <p class="term-text body-text text-main">
+                Mọi thắc mắc về chính sách bảo hành, xin
+                vui lòng liên hệ:<br>
+                📞 Hotline/Zalo: <strong>0973270102</strong><br>
+                📍 Địa chỉ: 366/4 Chu văn An, TP. Hồ Chí Minh<br>
+                ✉️ Email: <a
+                  href="mailto:lamphatcommerce@gmail.com"
+                  class="link body-text fw-medium"
+                >lamphatcommerce@gmail.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Term -->
+  </div>
+</template>
+
+<script setup>
+</script>
+
+<style scoped>
+</style>

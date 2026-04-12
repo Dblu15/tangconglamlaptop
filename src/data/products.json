@@ -1,6 +1,8 @@
 [
   {
     "id": "dell-latitude-5430-14",
+    "brand": "dell",
+    "line": "workstation",
     "name": "Dell Latitude 5430 14\"",
     "images": {
       "default": "/images/products/laptop/5430.png",
@@ -16,6 +18,8 @@
   },
   {
     "id": "dell-latitude-9430-14",
+    "brand": "dell",
+    "line": "workstation",
     "name": "Dell Latitude 9430 14\"",
     "images": {
       "default": "/images/products/laptop/9430.png",
@@ -32,6 +36,8 @@
   },
   {
     "id": "dell-latitude-7420-14",
+    "brand": "dell",
+    "line": "workstation",
     "name": "Dell Latitude 7420 14\"",
     "images": {
       "default": "/images/products/laptop/7420.png",
@@ -47,6 +53,8 @@
   },
   {
     "id": "dell-latitude-5440-14",
+    "brand": "dell",
+    "line": "workstation",
     "name": "Dell Latitude 5440 14\"",
     "images": {
       "default": "/images/products/laptop/5440.png",
@@ -62,6 +70,8 @@
   },
   {
     "id": "dell-latitude-7440-14",
+    "brand": "dell",
+    "line": "workstation",
     "name": "Dell Latitude 7440 14\"",
     "images": {
       "default": "/images/products/laptop/7440.png",
@@ -77,6 +87,8 @@
   },
   {
     "id": "dell-latitude-9430-2in1-14",
+    "brand": "dell",
+    "line": "workstation",
     "name": "Dell Latitude 9430 2in1 14\"",
     "images": {
       "default": "/images/products/laptop/9430_2in1.png",
@@ -92,6 +104,8 @@
   },
   {
     "id": "dell-latitude-5450-14",
+    "brand": "dell",
+    "line": "workstation",
     "name": "Dell Latitude 5450 14\"",
     "images": {
       "default": "/images/products/laptop/5450.png",
@@ -107,6 +121,8 @@
   },
   {
     "id": "dell-latitude-7450-14",
+    "brand": "dell",
+    "line": "workstation",
     "name": "Dell Latitude 7450 14\"",
     "images": {
       "default": "/images/products/laptop/7450.png",
@@ -122,6 +138,8 @@
   },
   {
     "id": "dell-latitude-9450-14",
+    "brand": "dell",
+    "line": "workstation",
     "name": "Dell Latitude 9450 14\"",
     "images": {
       "default": "/images/products/laptop/9450.png",
@@ -137,6 +155,8 @@
   },
   {
     "id": "dell-xps-15-9500-156-2020",
+    "brand": "dell",
+    "line": "mainstream",
     "name": "Dell XPS 15 9500 15.6\" 2020",
     "images": {
       "default": "/images/products/laptop/9500.png",
@@ -152,6 +172,8 @@
   },
   {
     "id": "dell-xps-13-9300-134-2020",
+    "brand": "dell",
+    "line": "mainstream",
     "name": "Dell XPS 13 9300 13.4\" 2020",
     "images": {
       "default": "/images/products/laptop/9300.png",
@@ -167,6 +189,8 @@
   },
   {
     "id": "dell-xps-17-9700-17-2020",
+    "brand": "dell",
+    "line": "mainstream",
     "name": "Dell XPS 17 9700 17\" 2020",
     "images": {
       "default": "/images/products/laptop/9700.png",
@@ -182,6 +206,8 @@
   },
   {
     "id": "dell-xps-15-9510-156-2021",
+    "brand": "dell",
+    "line": "mainstream",
     "name": "Dell XPS 15 9510 15.6\" 2021",
     "images": {
       "default": "/images/products/laptop/9510.png",
@@ -197,6 +223,8 @@
   },
   {
     "id": "dell-xps-17-9710-17-2021",
+    "brand": "dell",
+    "line": "mainstream",
     "name": "Dell XPS 17 9710 17\" 2021",
     "images": {
       "default": "/images/products/laptop/9710.png",
@@ -212,6 +240,8 @@
   },
   {
     "id": "dell-xps-13-9315-134-2022",
+    "brand": "dell",
+    "line": "mainstream",
     "name": "Dell XPS 13 9315 13.4\" 2022",
     "images": {
       "default": "/images/products/laptop/9315.png",
@@ -227,6 +257,8 @@
   },
   {
     "id": "dell-xps-13-plus-9320-134-2022",
+    "brand": "dell",
+    "line": "mainstream",
     "name": "Dell XPS 13 Plus 9320 13.4\" 2022",
     "images": {
       "default": "/images/products/laptop/9320.png",
@@ -242,6 +274,8 @@
   },
   {
     "id": "dell-xps-15-9520-156-2022",
+    "brand": "dell",
+    "line": "mainstream",
     "name": "Dell XPS 15 9520 15.6\" 2022",
     "images": {
       "default": "/images/products/laptop/9520.png",
@@ -257,6 +291,8 @@
   },
   {
     "id": "dell-xps-17-9720-17-2022",
+    "brand": "dell",
+    "line": "mainstream",
     "name": "Dell XPS 17 9720 17\" 2022",
     "images": {
       "default": "/images/products/laptop/9720.png",
@@ -273,6 +309,8 @@
   },
   {
     "id": "dell-xps-13-plus-9320-134-2023",
+    "brand": "dell",
+    "line": "mainstream",
     "name": "Dell XPS 13 Plus 9320 13.4\" 2023",
     "images": {
       "default": "/images/products/laptop/9320_23.png",
@@ -288,6 +326,8 @@
   },
   {
     "id": "dell-xps-15-9530-156-2023",
+    "brand": "dell",
+    "line": "mainstream",
     "name": "Dell XPS 15 9530 15.6\" 2023",
     "images": {
       "default": "/images/products/laptop/9530_23.png",
@@ -304,6 +344,8 @@
   },
   {
     "id": "dell-xps-17-9730-17-2023",
+    "brand": "dell",
+    "line": "mainstream",
     "name": "Dell XPS 17 9730 17\" 2023",
     "images": {
       "default": "/images/products/laptop/9730_23.png",
@@ -320,6 +362,8 @@
   },
   {
     "id": "dell-xps-13-134-2025",
+    "brand": "dell",
+    "line": "mainstream",
     "name": "Dell XPS 13 13.4\" 2025",
     "images": {
       "default": "/images/products/laptop/XPS13_25.png",
@@ -335,6 +379,8 @@
   },
   {
     "id": "dell-xps-14-9440-145-2025",
+    "brand": "dell",
+    "line": "mainstream",
     "name": "Dell XPS 14 9440 14.5\" 2025",
     "images": {
       "default": "/images/products/laptop/9440.png",
@@ -350,6 +396,8 @@
   },
   {
     "id": "dell-xps-16-16-2025",
+    "brand": "dell",
+    "line": "mainstream",
     "name": "Dell XPS 16 16\" 2025",
     "images": {
       "default": "/images/products/laptop/xps16.png",
@@ -361,6 +409,550 @@
       "cpus": ["Core Ultra 7 155H", "Core Ultra 9 185H"],
       "rams": ["16GB", "32GB", "64GB"],
       "vgas": ["RTX 4060", "RTX 4070"]
+    }
+  },
+  {
+    "id": "hp-elitebook-840-g8-14",
+    "brand": "hp",
+    "line": "mainstream",
+    "name": "HP EliteBook 840 G8 14\"",
+    "images": {
+      "default": "/images/products/laptop/hp1.png",
+      "hover": "/images/products/laptop/hp1.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["FHD", "FHD touch"],
+      "cpus": ["i5-1135G7", "i7-1165G7"],
+      "rams": ["8GB", "16GB", "32GB"],
+      "vgas": []
+    }
+  },
+  {
+    "id": "hp-elitebook-840-g9-14",
+    "brand": "hp",
+    "line": "mainstream",
+    "name": "HP EliteBook 840 G9 14\"",
+    "images": {
+      "default": "/images/products/laptop/hp2.png",
+      "hover": "/images/products/laptop/hp2.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["FHD", "FHD touch", "WUXGA"],
+      "cpus": ["i5-1235U", "i7-1255U"],
+      "rams": ["8GB", "16GB", "32GB"],
+      "vgas": []
+    }
+  },
+  {
+    "id": "hp-elitebook-840-g10-14",
+    "brand": "hp",
+    "line": "mainstream",
+    "name": "HP EliteBook 840 G10 14\"",
+    "images": {
+      "default": "/images/products/laptop/hp3.png",
+      "hover": "/images/products/laptop/hp3.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["FHD", "FHD touch", "WUXGA touch"],
+      "cpus": ["i5-1335U", "i7-1355U"],
+      "rams": ["16GB", "32GB"],
+      "vgas": []
+    }
+  },
+  {
+    "id": "hp-elitebook-850-g8-156",
+    "brand": "hp",
+    "line": "mainstream",
+    "name": "HP EliteBook 850 G8 15.6\"",
+    "images": {
+      "default": "/images/products/laptop/hp4.png",
+      "hover": "/images/products/laptop/hp4.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["FHD", "FHD touch"],
+      "cpus": ["i5-1135G7", "i7-1165G7"],
+      "rams": ["8GB", "16GB", "32GB"],
+      "vgas": []
+    }
+  },
+  {
+    "id": "hp-elitebook-850-g9-156",
+    "brand": "hp",
+    "line": "mainstream",
+    "name": "HP EliteBook 850 G9 15.6\"",
+    "images": {
+      "default": "/images/products/laptop/hp5.png",
+      "hover": "/images/products/laptop/hp5.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["FHD", "FHD touch", "WUXGA"],
+      "cpus": ["i5-1235U", "i7-1255U"],
+      "rams": ["8GB", "16GB", "32GB"],
+      "vgas": []
+    }
+  },
+  {
+    "id": "hp-elitebook-1040-g9-14",
+    "brand": "hp",
+    "line": "mainstream",
+    "name": "HP EliteBook 1040 G9 14\"",
+    "images": {
+      "default": "/images/products/laptop/hp6.png",
+      "hover": "/images/products/laptop/hp6.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["FHD+", "2.8K OLED touch"],
+      "cpus": ["i5-1235U", "i7-1255U", "i7-1265U"],
+      "rams": ["16GB", "32GB"],
+      "vgas": []
+    }
+  },
+  {
+    "id": "hp-spectre-x360-14-14",
+    "brand": "hp",
+    "line": "mainstream",
+    "name": "HP Spectre x360 14 14\"",
+    "images": {
+      "default": "/images/products/laptop/hp7.png",
+      "hover": "/images/products/laptop/hp7.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["2.8K OLED touch", "3K2K OLED touch"],
+      "cpus": ["Core Ultra 5 125U", "Core Ultra 7 155U"],
+      "rams": ["16GB", "32GB"],
+      "vgas": []
+    }
+  },
+  {
+    "id": "hp-spectre-x360-16-16",
+    "brand": "hp",
+    "line": "mainstream",
+    "name": "HP Spectre x360 16 16\"",
+    "images": {
+      "default": "/images/products/laptop/hp8.png",
+      "hover": "/images/products/laptop/hp8.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["3K+ OLED touch"],
+      "cpus": ["Core Ultra 7 155H", "Core Ultra 9 185H"],
+      "rams": ["16GB", "32GB", "64GB"],
+      "vgas": ["RTX 4050"]
+    }
+  },
+  {
+    "id": "hp-zbook-firefly-14-g8-14",
+    "brand": "hp",
+    "line": "workstation",
+    "name": "HP ZBook Firefly 14 G8 14\"",
+    "images": {
+      "default": "/images/products/laptop/hpg1.png",
+      "hover": "/images/products/laptop/hpg1.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["FHD", "FHD touch"],
+      "cpus": ["i5-1135G7", "i7-1165G7"],
+      "rams": ["16GB", "32GB"],
+      "vgas": ["T500"]
+    }
+  },
+  {
+    "id": "hp-zbook-firefly-14-g9-14",
+    "brand": "hp",
+    "line": "workstation",
+    "name": "HP ZBook Firefly 14 G9 14\"",
+    "images": {
+      "default": "/images/products/laptop/hpg2.png",
+      "hover": "/images/products/laptop/hpg2.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["FHD", "FHD touch", "WUXGA"],
+      "cpus": ["i5-1235U", "i7-1255U"],
+      "rams": ["16GB", "32GB"],
+      "vgas": ["T550"]
+    }
+  },
+  {
+    "id": "hp-zbook-firefly-14-g10-14",
+    "brand": "hp",
+    "line": "workstation",
+    "name": "HP ZBook Firefly 14 G10 14\"",
+    "images": {
+      "default": "/images/products/laptop/hpg3.png",
+      "hover": "/images/products/laptop/hpg3.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["WUXGA", "WUXGA touch"],
+      "cpus": ["i5-1335U", "i7-1355U"],
+      "rams": ["16GB", "32GB"],
+      "vgas": ["RTX A500"]
+    }
+  },
+  {
+    "id": "hp-zbook-studio-g8-156",
+    "brand": "hp",
+    "line": "workstation",
+    "name": "HP ZBook Studio G8 15.6\"",
+    "images": {
+      "default": "/images/products/laptop/hpg4.png",
+      "hover": "/images/products/laptop/hpg4.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["FHD", "UHD OLED touch"],
+      "cpus": ["i7-11800H", "i9-11900H"],
+      "rams": ["16GB", "32GB", "64GB"],
+      "vgas": ["RTX 3060", "RTX 3070", "RTX 3080"]
+    }
+  },
+  {
+    "id": "hp-zbook-studio-g9-156",
+    "brand": "hp",
+    "line": "workstation",
+    "name": "HP ZBook Studio G9 15.6\"",
+    "images": {
+      "default": "/images/products/laptop/hpg5.png",
+      "hover": "/images/products/laptop/hpg5.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["FHD", "UHD OLED touch"],
+      "cpus": ["i7-12700H", "i9-12900H"],
+      "rams": ["16GB", "32GB", "64GB"],
+      "vgas": ["RTX 3070 Ti", "RTX 3080 Ti"]
+    }
+  },
+  {
+    "id": "hp-zbook-studio-g10-16",
+    "brand": "hp",
+    "line": "workstation",
+    "name": "HP ZBook Studio G10 16\"",
+    "images": {
+      "default": "/images/products/laptop/hpg6.png",
+      "hover": "/images/products/laptop/hpg6.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["WUXGA", "2.5K OLED touch"],
+      "cpus": ["i7-13700H", "i9-13900H"],
+      "rams": ["32GB", "64GB"],
+      "vgas": ["RTX 4070", "RTX 4080"]
+    }
+  },
+  {
+    "id": "hp-zbook-fury-16-g9-16",
+    "brand": "hp",
+    "line": "workstation",
+    "name": "HP ZBook Fury 16 G9 16\"",
+    "images": {
+      "default": "/images/products/laptop/hp7.png",
+      "hover": "/images/products/laptop/hp7.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["FHD", "UHD+ touch"],
+      "cpus": ["i7-12800HX", "i9-12950HX"],
+      "rams": ["32GB", "64GB", "128GB"],
+      "vgas": ["RTX A3000", "RTX A4000", "RTX A5000"]
+    }
+  },
+  {
+    "id": "hp-zbook-fury-16-g10-16",
+    "brand": "hp",
+    "line": "workstation",
+    "name": "HP ZBook Fury 16 G10 16\"",
+    "images": {
+      "default": "/images/products/laptop/hp8.png",
+      "hover": "/images/products/laptop/hp8.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["WUXGA", "UHD+ touch"],
+      "cpus": ["i7-13700HX", "i9-13950HX"],
+      "rams": ["32GB", "64GB", "128GB"],
+      "vgas": ["RTX 4000 Ada", "RTX 5000 Ada"]
+    }
+  },
+  {
+    "id": "thinkpad-x1-carbon-gen9-14",
+    "brand": "thinkpad",
+    "line": "mainstream",
+    "name": "ThinkPad X1 Carbon Gen 9 14\"",
+    "images": {
+      "default": "/images/products/laptop/tp1.png",
+      "hover": "/images/products/laptop/tp1.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["FHD", "WUXGA", "2.8K OLED touch"],
+      "cpus": ["i5-1135G7", "i7-1165G7"],
+      "rams": ["8GB", "16GB", "32GB"],
+      "vgas": []
+    }
+  },
+  {
+    "id": "thinkpad-x1-carbon-gen10-14",
+    "brand": "thinkpad",
+    "line": "mainstream",
+    "name": "ThinkPad X1 Carbon Gen 10 14\"",
+    "images": {
+      "default": "/images/products/laptop/tp2.png",
+      "hover": "/images/products/laptop/tp2.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["WUXGA", "2.8K OLED touch"],
+      "cpus": ["i5-1235U", "i7-1255U", "i7-1265U"],
+      "rams": ["16GB", "32GB"],
+      "vgas": []
+    }
+  },
+  {
+    "id": "thinkpad-x1-carbon-gen11-14",
+    "brand": "thinkpad",
+    "line": "mainstream",
+    "name": "ThinkPad X1 Carbon Gen 11 14\"",
+    "images": {
+      "default": "/images/products/laptop/tp1.png",
+      "hover": "/images/products/laptop/tp1.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["WUXGA", "2.8K OLED touch"],
+      "cpus": ["i5-1335U", "i7-1355U", "i7-1365U"],
+      "rams": ["16GB", "32GB"],
+      "vgas": []
+    }
+  },
+  {
+    "id": "thinkpad-x1-carbon-gen12-14",
+    "brand": "thinkpad",
+    "line": "mainstream",
+    "name": "ThinkPad X1 Carbon Gen 12 14\"",
+    "images": {
+      "default": "/images/products/laptop/tp2.png",
+      "hover": "/images/products/laptop/tp2.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["WUXGA", "2.8K OLED touch"],
+      "cpus": ["Core Ultra 5 125U", "Core Ultra 7 155U"],
+      "rams": ["16GB", "32GB", "64GB"],
+      "vgas": []
+    }
+  },
+  {
+    "id": "thinkpad-t14s-gen3-14",
+    "brand": "thinkpad",
+    "line": "mainstream",
+    "name": "ThinkPad T14s Gen 3 14\"",
+    "images": {
+      "default": "/images/products/laptop/tp1.png",
+      "hover": "/images/products/laptop/tp1.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["WUXGA", "2.8K OLED touch"],
+      "cpus": ["i5-1235U", "i7-1255U"],
+      "rams": ["8GB", "16GB", "32GB"],
+      "vgas": []
+    }
+  },
+  {
+    "id": "thinkpad-t14s-gen4-14",
+    "brand": "thinkpad",
+    "line": "mainstream",
+    "name": "ThinkPad T14s Gen 4 14\"",
+    "images": {
+      "default": "/images/products/laptop/tp2.png",
+      "hover": "/images/products/laptop/tp2.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["WUXGA", "2.8K OLED touch"],
+      "cpus": ["i5-1335U", "i7-1355U"],
+      "rams": ["16GB", "32GB"],
+      "vgas": []
+    }
+  },
+  {
+    "id": "thinkpad-t14-gen4-14",
+    "brand": "thinkpad",
+    "line": "mainstream",
+    "name": "ThinkPad T14 Gen 4 14\"",
+    "images": {
+      "default": "/images/products/laptop/tp1.png",
+      "hover": "/images/products/laptop/tp1.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["WUXGA", "WUXGA touch"],
+      "cpus": ["i5-1335U", "i7-1355U"],
+      "rams": ["8GB", "16GB", "32GB"],
+      "vgas": []
+    }
+  },
+  {
+    "id": "thinkpad-t14-gen5-14",
+    "brand": "thinkpad",
+    "line": "mainstream",
+    "name": "ThinkPad T14 Gen 5 14\"",
+    "images": {
+      "default": "/images/products/laptop/tp1.png",
+      "hover": "/images/products/laptop/tp1.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["WUXGA", "2.8K OLED touch"],
+      "cpus": ["Core Ultra 5 125U", "Core Ultra 7 155U"],
+      "rams": ["16GB", "32GB"],
+      "vgas": []
+    }
+  },
+  {
+    "id": "thinkpad-p14s-gen3-14",
+    "brand": "thinkpad",
+    "line": "workstation",
+    "name": "ThinkPad P14s Gen 3 14\"",
+    "images": {
+      "default": "/images/products/laptop/tp2.png",
+      "hover": "/images/products/laptop/tp2.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["WUXGA", "2.8K OLED touch"],
+      "cpus": ["i5-1235U", "i7-1255U"],
+      "rams": ["16GB", "32GB"],
+      "vgas": ["T550"]
+    }
+  },
+  {
+    "id": "thinkpad-p14s-gen4-14",
+    "brand": "thinkpad",
+    "line": "workstation",
+    "name": "ThinkPad P14s Gen 4 14\"",
+    "images": {
+      "default": "/images/products/laptop/tp2.png",
+      "hover": "/images/products/laptop/tp2.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["WUXGA", "2.8K OLED touch"],
+      "cpus": ["i5-1335U", "i7-1355U"],
+      "rams": ["16GB", "32GB"],
+      "vgas": ["RTX A500"]
+    }
+  },
+  {
+    "id": "thinkpad-p16s-gen1-16",
+    "brand": "thinkpad",
+    "line": "workstation",
+    "name": "ThinkPad P16s Gen 1 16\"",
+    "images": {
+      "default": "/images/products/laptop/tp1.png",
+      "hover": "/images/products/laptop/tp1.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["WUXGA", "WQXGA touch"],
+      "cpus": ["i5-1235U", "i7-1255U"],
+      "rams": ["16GB", "32GB", "64GB"],
+      "vgas": ["T550"]
+    }
+  },
+  {
+    "id": "thinkpad-p16s-gen2-16",
+    "brand": "thinkpad",
+    "line": "workstation",
+    "name": "ThinkPad P16s Gen 2 16\"",
+    "images": {
+      "default": "/images/products/laptop/tp2.png",
+      "hover": "/images/products/laptop/tp2.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["WUXGA", "WQXGA touch"],
+      "cpus": ["i5-1335U", "i7-1355U"],
+      "rams": ["16GB", "32GB", "64GB"],
+      "vgas": ["RTX A500"]
+    }
+  },
+  {
+    "id": "thinkpad-p16-gen1-16",
+    "brand": "thinkpad",
+    "line": "workstation",
+    "name": "ThinkPad P16 Gen 1 16\"",
+    "images": {
+      "default": "/images/products/laptop/tp1.png",
+      "hover": "/images/products/laptop/tp1.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["WUXGA", "UHD+ IPS"],
+      "cpus": ["i7-12800HX", "i9-12950HX"],
+      "rams": ["16GB", "32GB", "64GB", "128GB"],
+      "vgas": ["RTX A1000", "RTX A2000", "RTX A3000", "RTX A4000", "RTX A5000"]
+    }
+  },
+  {
+    "id": "thinkpad-p16-gen2-16",
+    "brand": "thinkpad",
+    "line": "workstation",
+    "name": "ThinkPad P16 Gen 2 16\"",
+    "images": {
+      "default": "/images/products/laptop/tp2.png",
+      "hover": "/images/products/laptop/tp2.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["WUXGA", "UHD+ IPS"],
+      "cpus": ["i7-13700HX", "i9-13950HX"],
+      "rams": ["16GB", "32GB", "64GB", "128GB"],
+      "vgas": ["RTX 2000 Ada", "RTX 3000 Ada", "RTX 4000 Ada", "RTX 5000 Ada"]
+    }
+  },
+  {
+    "id": "thinkpad-p1-gen6-16",
+    "brand": "thinkpad",
+    "line": "workstation",
+    "name": "ThinkPad P1 Gen 6 16\"",
+    "images": {
+      "default": "/images/products/laptop/tp1.png",
+      "hover": "/images/products/laptop/tp1.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["WUXGA", "2.5K IPS touch", "2K OLED touch"],
+      "cpus": ["i7-13700H", "i9-13900H"],
+      "rams": ["16GB", "32GB", "64GB"],
+      "vgas": ["RTX 2000 Ada", "RTX 3000 Ada", "RTX 4000 Ada"]
+    }
+  },
+  {
+    "id": "thinkpad-p1-gen7-16",
+    "brand": "thinkpad",
+    "line": "workstation",
+    "name": "ThinkPad P1 Gen 7 16\"",
+    "images": {
+      "default": "/images/products/laptop/tp2.png",
+      "hover": "/images/products/laptop/tp2.png"
+    },
+    "imageScale": 1,
+    "specs": {
+      "screens": ["WUXGA", "2.5K IPS touch", "2K OLED touch"],
+      "cpus": ["Core Ultra 7 165H", "Core Ultra 9 185H"],
+      "rams": ["16GB", "32GB", "64GB"],
+      "vgas": ["RTX 2000 Ada", "RTX 3000 Ada", "RTX 4000 Ada"]
     }
   }
 ]

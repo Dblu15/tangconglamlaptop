@@ -1,7 +1,9 @@
 <template>
   <div>
     <!-- Slider -->
-    <img src="/images/slider/slider.png" width="100%" alt="Banner slider" />
+    <div class="d-flex justify-content-center">
+      <img src="/images/slider/slider.png" width="80%" alt="Banner slider" />
+    </div>
 
     <!-- Top Pick -->
     <section class="flat-spacing-8 bg-surface">

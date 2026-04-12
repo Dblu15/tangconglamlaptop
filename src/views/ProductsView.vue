@@ -78,11 +78,10 @@ const selectedLineLabel = computed(() => {
 })
 
 const filteredProducts = computed(() => {
-  // Show all products only for brand=dell and line=mainstream
-  if (route.query.brand === 'dell' && route.query.line === 'mainstream') {
-    return products
-  }
-  return []
+  const brand = route.query.brand
+  const line = route.query.line
+  if (!brand || !line) return []
+  return products.filter(p => p.brand === brand && p.line === line)
 })
 </script>
 
